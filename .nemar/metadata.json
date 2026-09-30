@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "PRIOS",
-  "description": "This dataset contains intracranial EEG (ECoG) recordings from 6 epilepsy patients (ages 13-53) who underwent Cortico-Cortical Evoked Potential (CCEP) mapping via single pulse electrical stimulation (SPES), both in the awake state during clinical routine and under general propofol anesthesia. The data were collected to investigate the effect of propofol on local effective brain networks. Electrode positions were estimated using individual MRI-based Freesurfer reconstructions and co-registered to MNI305 space.",
-  "methods_description": "CCEPs were recorded with ECoG during single pulse electrical stimulation (SPES) performed while patients were awake (clinical routine, SPES-clinical) and under general propofol anesthesia (SPES-propofol). Electrode positions were estimated using Freesurfer reconstructions of individual subject MRI scans and converted to MNI305 space via surface-based non-linear transformation.",
+  "description": "The PRIOS dataset contains electrocorticography (ECoG) recordings from 6 patients aged 13-53 years. Cortico-cortical evoked potentials (CCEPs) were elicited by single pulse electrical stimulation (SPES), both in the awake patient during clinical routine and under general propofol anesthesia in the operating room. The data support investigation of how propofol affects local effective brain networks.",
+  "methods_description": "CCEPs were recorded with subdural ECoG during single pulse electrical stimulation, either in the awake state for clinical purposes (SPES-clinical) or under propofol anesthesia (SPES-propofol). Electrode positions were estimated by running Freesurfer on each subject's MRI and converted to MNI305 space using the Freesurfer surface-based non-linear transformation.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,14 +14,18 @@
   },
   "keywords": [
     {
+      "term": "iEEG"
+    },
+    {
       "term": "Electrocorticography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
-      "term": "Evoked Potentials",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005071"
+      "term": "cortico-cortical evoked potentials"
+    },
+    {
+      "term": "single pulse electrical stimulation"
     },
     {
       "term": "Propofol",
@@ -32,15 +36,6 @@
       "term": "Epilepsy",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
-      "term": "single pulse electrical stimulation"
-    },
-    {
-      "term": "effective connectivity"
-    },
-    {
-      "term": "iEEG"
     }
   ],
   "related_identifiers": [
@@ -62,18 +57,24 @@
   ],
   "funding_references": [
     {
+      "funder_name": "EpilepsieNL #17-07"
+    },
+    {
+      "funder_name": "EpilepsieNL #19-12"
+    },
+    {
       "funder_name": "NIH RO1MH122258"
     },
     {
       "funder_name": "EpilepsieNL",
-      "award_number": "17-07"
+      "award_number": "NEF17-07"
     },
     {
       "funder_name": "EpilepsieNL",
-      "award_number": "19-12"
+      "award_number": "NEF19-12"
     },
     {
-      "funder_name": "NIH",
+      "funder_name": "National Institutes of Health",
       "award_number": "R01MH122258"
     }
   ],
@@ -82,7 +83,7 @@
     "ieeg"
   ],
   "sizes": [
-    "29.6 GB (90 files)"
+    "27.56 GB (90 files)"
   ],
   "formats": [
     ".eeg",
