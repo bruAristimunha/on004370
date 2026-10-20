@@ -44,4 +44,4 @@ Research reported in this publication was supported by EpilepsieNL under Award N
 
 Add coordsystem.json MNI305/mm next to 7 electrodes.tsv (proposal A1, Lane G round 4). Evidence: README: "All shared electrode positions were converted to MNI305 space using the Freesurfer surface based non-linear transformation"; every *_electrodes.json: "x position of the electrode in MNI305 coordinates".
 
-Full evidence per dataset: REPORT-ieeg-locations.md and ieeg_locations.json (Lane G, 19 Oct 2026). This dataset mirrors OpenNeuro; the same change belongs upstream. Local branch only.
+The evidence for this change is stated in this section (the dataset's own files, the cited paper and the identical sibling deposits named above). This dataset mirrors OpenNeuro; the same change belongs upstream.
